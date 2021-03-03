@@ -94,7 +94,7 @@ Adjust the bin size.
 > dev.off()
 ```
 <center>
-<img src="hist_AlleleA_bins.png" width=500px></img>
+<img src="hist_AlleleA_bins.png"></img>
 </center>
 
 ## 5. Scatter Plots
@@ -106,7 +106,7 @@ Adjust the bin size.
 ```
 
 <center>
-<img src="AlleleA_Scatter_open.png" width=500px></img>
+<img src="AlleleA_Scatter_open.png"></img>
 </center>
 
 
@@ -117,7 +117,7 @@ Adjust the point style.
 > dev.off()
 ```
 <center>
-<img src="AlleleA_Scatter_closed.png" width=500px></img>
+<img src="AlleleA_Scatter_closed.png"></img>
 </center>
 
 Assign point color based on superpopulation.
@@ -130,7 +130,7 @@ Assign point color based on superpopulation.
 ```
 
 <center>
-<img src="rs126654_freq.png" width=500px></img>
+<img src="rs126654_freq.png"></img>
 </center>
 
 
@@ -157,7 +157,7 @@ Drawing the world map outline.
 > dev.off()
 ```
 <center>
-<img src="WorldMap_outline.png" width=500px></img>
+<img src="WorldMap_outline.png"></img>
 </center>
 
 
@@ -172,7 +172,7 @@ Plotting the human population.
 > dev.off()
 ```
 <center>
-<img src="WorldMap_pop.png" width=500px></img>
+<img src="WorldMap_pop.png"></img>
 </center>
 
 
@@ -187,7 +187,7 @@ Adjusting the point size to correlate to the allele frequency.
 ```
 
 <center>
-<img src="WorldMap_adjpop.png" width=500px></img>
+<img src="WorldMap_adjpop.png" ></img>
 </center>
 
 
@@ -214,6 +214,6 @@ Using pie charts to show relative allele frequencies.
 > dev.off()
 ```
 <center>
-<img src="WorldPie_Final.png" width=500px></img>
+<img src="WorldPie_Final.png"></img>
 </center>
 

@@ -157,7 +157,7 @@ Drawing the world map outline.
 > dev.off()
 ```
 <center>
-<img src="WorldMap_outline.png" width=500px></img>
+<img src="WorldMap_outline.png" width=1000px></img>
 </center>
 
 
@@ -172,7 +172,7 @@ Plotting the human population.
 > dev.off()
 ```
 <center>
-<img src="WorldMap_pop.png" width=500px></img>
+<img src="WorldMap_pop.png" width=1000px></img>
 </center>
 
 
@@ -187,7 +187,7 @@ Adjusting the point size to correlate to the allele frequency.
 ```
 
 <center>
-<img src="WorldMap_adjpop.png" width=500px></img>
+<img src="WorldMap_adjpop.png" width=1000px></img>
 </center>
 
 
@@ -214,6 +214,6 @@ Using pie charts to show relative allele frequencies.
 > dev.off()
 ```
 <center>
-<img src="WorldPie_Final.png" width=500px></img>
+<img src="WorldPie_Final.png" width=1000px></img>
 </center>
 

@@ -79,58 +79,58 @@ date: March 2, 2021
 ## 4. Histograms
 
 ```
-> pdf("hist_AlleleA.pdf", width=8, height=8)
+> png("hist_AlleleA.png")
 > hist(freq$Allele_A)
 > dev.off()
 ```
 <center>
-<img src="hist_AlleleA.pdf" width=500px></img>
+<img src="hist_AlleleA.png" width=500px></img>
 </center>
 
 Adjust the bin size.
 ```
-> pdf("hist_AlleleA_bins.pdf", width=8, height=8)
+> png("hist_AlleleA_bins.png")
 > hist(freq$Allele_A,breaks=20)
 > dev.off()
 ```
 <center>
-<img src="hist_AlleleA_bins.pdf" width=500px></img>
+<img src="hist_AlleleA_bins.png" width=500px></img>
 </center>
 
 ## 5. Scatter Plots
 
 ```
-> pdf("AlleleA_Scatter_open.pdf", width=8, height=8)
+> png("AlleleA_Scatter_open.png")
 > plot(freq$Allele_A, freq$lat)
 > dev.off()
 ```
 
 <center>
-<img src="AlleleA_Scatter_open.pdf" width=500px></img>
+<img src="AlleleA_Scatter_open.png" width=500px></img>
 </center>
 
 
 Adjust the point style.
 ```
-> pdf("AlleleA_Scatter_closed.pdf", width=8, height=8)
+> png("AlleleA_Scatter_closed.png")
 > plot(freq$Allele_A, freq$lat, xlab="f(A) rs1426654", ylab="Latitude", pch=16, cex=0.8, col="salmon")
 > dev.off()
 ```
 <center>
-<img src="AlleleA_Scatter_closed.pdf" width=500px></img>
+<img src="AlleleA_Scatter_closed.png" width=500px></img>
 </center>
 
 Assign point color based on superpopulation.
 ```
 > myColors <- c(AFR="red", AMR="blue", EAS = "darkgreen", EUR = "salmon", SAS="black")
-> pdf("rs1426654_freq.pdf", width=8, height=8) 
+> png("rs1426654_freq.png")
 > plot(freq$Allele_A, freq$lat, xlab="Freq(A) rs1426654", ylab="Latitude", pch=16, cex=0.8, col=myColors[freq$superpop], xlim=c(0,1), main="Latitudinal Variation in rs1426654 among 26 human populations")
 > legend("topleft", c("African", "Admixed American", "East Asian", "European", "South Asian"), cex=0.8, col=c("red", "blue", "darkgreen", "salmon", "black"), pch=16, inset=0.02)
 > dev.off()
 ```
 
 <center>
-<img src="rs126654_freq.pdf" width=500px></img>
+<img src="rs126654_freq.png" width=500px></img>
 </center>
 
 
@@ -151,13 +151,13 @@ library(mapplots)
 Drawing the world map outline.
 
 ```
-> pdf("WorldMap_outline.pdf", width=8, height=8)
+> png("WorldMap_outline.png")
 > map('worldHires', xlim=c(-120,142), ylim=c(-12,72), col='gray', fill=FALSE)
 > box()
 > dev.off()
 ```
 <center>
-<img src="WorldMap_outline.pdf" width=500px></img>
+<img src="WorldMap_outline.png" width=500px></img>
 </center>
 
 
@@ -165,20 +165,21 @@ Drawing the world map outline.
 Plotting the human population.
 
 ```
-> pdf("WorldMap_pop.pdf", width=8, height=8)
+> png("WorldMap_pop.png")
 > map('worldHires', xlim=c(-120,142), ylim=c(-12,72), col='gray', fill=FALSE)
 > points(freq$long, freq$lat, pch=16, col="salmon")
 > box()
 > dev.off()
 ```
 <center>
-<img src="WorldMap_pop.pdf" width=500px></img>
+<img src="WorldMap_pop.png" width=500px></img>
 </center>
 
 
 Adjusting the point size to correlate to the allele frequency.
+
 ```
-> pdf("WorldMap_adjpop.pdf", width=8, height=8)
+> png("WorldMap_adjpop.png")
 > map('worldHires', xlim=c(-120,142), ylim=c(-12,72), col='gray', fill=FALSE)
 > points(freq$long, freq$lat, pch=16, cex=freq$Allele_A*1.5, col="blue")
 > box()
@@ -186,14 +187,14 @@ Adjusting the point size to correlate to the allele frequency.
 ```
 
 <center>
-<img src="WorldMap_adjpop.pdf" width=500px></img>
+<img src="WorldMap_adjpop.png" width=500px></img>
 </center>
 
 
 Using pie charts to show relative allele frequencies.
 
 ```
-> pdf("WorldPie_Final.pdf", width=10, height=7)
+> png("WorldPie_Final.png")
 > map('worldHires', xlim=c(-120,142), ylim=c(-12,72), col='gray', fill=FALSE)
 > 
 > for(m in 1:26){
@@ -213,6 +214,6 @@ Using pie charts to show relative allele frequencies.
 > dev.off()
 ```
 <center>
-<img src="WorldPie_Final.pdf" width=500px></img>
+<img src="WorldPie_Final.png" width=500px></img>
 </center>
 

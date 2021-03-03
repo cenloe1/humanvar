@@ -84,7 +84,7 @@ date: March 2, 2021
 > dev.off()
 ```
 <center>
-<img src="hist_AlleleA.png" width=500px></img>
+<img src="hist_AlleleA.png"></img>
 </center>
 
 Adjust the bin size.
